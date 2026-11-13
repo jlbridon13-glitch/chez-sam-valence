@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#292722">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Chez Sam — Paniers anti-gaspi du soir</title>
+<meta name="description" content="Chez Sam, place des Clercs à Valence : réservez un panier anti-gaspi à retirer au restaurant.">
+<link rel="icon" href="/images/logo-chez-sam-rond.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="topbar">Version de démonstration · Chez Sam · Valence</div>
+<header class="header"><div class="container">
+  <a class="brand" href="/"><img src="/images/logo-chez-sam-rond.png" alt="Logo Chez Sam" width="52" height="52"><span><strong>CHEZ SAM</strong><small>Place des Clercs · Valence</small></span></a>
+</div></header>
+
+<section class="hero"><div class="container">
+  <div class="eyebrow">Anti-gaspi</div>
+  <h1>Les paniers du jour, <em>réservés pour vous.</em></h1>
+  <p>Réservez en quelques secondes, puis venez retirer votre panier au restaurant, place des Clercs.</p>
+</div></section>
+
+<main class="container">
+  <div class="notice"><strong>Réserver n'est pas payer.</strong> Aucun paiement en ligne : vous réglez directement au restaurant au moment du retrait.</div>
+
+  <h2 class="section-title">Paniers disponibles</h2>
+  <div id="cards" class="cards" aria-live="polite"><div class="empty">Chargement…</div></div>
+
+  <div class="panel" style="max-width:520px">
+    <h3 style="font-size:22px">Retrouver ma réservation</h3>
+    <p class="fine">Saisissez le code à 6 caractères reçu lors de la réservation.</p>
+    <form id="lookup" autocomplete="off">
+      <label>Code de réservation<input id="lookup-code" maxlength="6" autocapitalize="characters" required placeholder="ex. K7M2QX"></label>
+      <div id="lookup-out"></div>
+      <button class="btn light full" type="submit">Voir ma réservation</button>
+    </form>
+  </div>
+</main>
+
+<footer><div class="container">
+  <h3>Vos données personnelles</h3>
+  <p>Responsable du traitement : Chez Sam, place des Clercs, Valence. Les informations demandées (nom, téléphone) servent uniquement à préparer et remettre votre panier. Elles ne sont ni vendues ni utilisées pour de la publicité. Elles sont conservées 90 jours après le retrait ou l'annulation, puis supprimées. Vous pouvez demander l'accès, la correction ou la suppression de vos données en vous adressant au restaurant.</p>
+  <p>Démonstration réalisée par NOESIS.</p>
+</div></footer>
+
+<div class="modal-bg" id="modal" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <button class="x" id="m-close" aria-label="Fermer">×</button>
+  <div id="m-body"></div>
+</div></div>
+<div id="toast" role="status"></div>
+<script src="/app.js"></script>
+</body>
+</html>

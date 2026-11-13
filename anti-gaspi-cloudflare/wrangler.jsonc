@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "chez-sam-anti-gaspi",
+  "main": "src/index.js",
+  "compatibility_date": "2025-09-01",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "chez-sam-anti-gaspi",
+      "database_id": "REMPLACE_PAR_deploy.sh",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

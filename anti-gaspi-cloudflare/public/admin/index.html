@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#292722">
+<title>Espace Sam — Chez Sam</title>
+<link rel="icon" href="/images/logo-chez-sam-rond.png">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="header"><div class="container">
+  <a class="brand" href="/admin/"><img src="/images/logo-chez-sam-rond.png" alt="Logo Chez Sam" width="52" height="52"><span><strong>ESPACE SAM</strong><small>Gestion des paniers</small></span></a>
+  <button class="btn light small" id="logout" hidden>Se déconnecter</button>
+</div></header>
+<main class="container" id="app" style="padding-top:22px;padding-bottom:60px"></main>
+<div class="modal-bg" id="modal" hidden><div class="modal"><button class="x" id="m-close" aria-label="Fermer">×</button><div id="m-body"></div></div></div>
+<div id="toast" role="status"></div>
+<script src="/admin/admin.js"></script>
+</body>
+</html>
