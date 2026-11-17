@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chez-sam-valence.vercel.app/sitemap.xml
