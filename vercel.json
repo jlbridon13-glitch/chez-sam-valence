@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "chezsam-valence.vercel.app"
+        }
+      ],
+      "destination": "https://chez-sam-valence.vercel.app/:path*",
+      "permanent": true
+    }
+  ]
+}
