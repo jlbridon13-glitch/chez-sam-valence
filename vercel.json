@@ -3,18 +3,31 @@
   "redirects": [
     {
       "source": "/index.html",
-      "destination": "/",
+      "has": [{ "type": "host", "value": "chez-sam-valence.vercel.app" }],
+      "destination": "https://chezsam-valence.fr/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [{ "type": "host", "value": "chezsam-valence.vercel.app" }],
+      "destination": "https://chezsam-valence.fr/",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "chezsam-valence.vercel.app"
-        }
-      ],
-      "destination": "https://chez-sam-valence.vercel.app/:path*",
+      "has": [{ "type": "host", "value": "chez-sam-valence.vercel.app" }],
+      "destination": "https://chezsam-valence.fr/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "chezsam-valence.vercel.app" }],
+      "destination": "https://chezsam-valence.fr/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
       "permanent": true
     }
   ]
