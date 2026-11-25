@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chez-sam-valence.vercel.app/sitemap.xml
+Sitemap: https://chezsam-valence.fr/sitemap.xml
