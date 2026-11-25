@@ -3,25 +3,45 @@
   "redirects": [
     {
       "source": "/index.html",
-      "has": [{ "type": "host", "value": "chez-sam-valence.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "chez-sam-valence.vercel.app"
+        }
+      ],
       "destination": "https://chezsam-valence.fr/",
       "permanent": true
     },
     {
       "source": "/index.html",
-      "has": [{ "type": "host", "value": "chezsam-valence.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "chezsam-valence.vercel.app"
+        }
+      ],
       "destination": "https://chezsam-valence.fr/",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "chez-sam-valence.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "chez-sam-valence.vercel.app"
+        }
+      ],
       "destination": "https://chezsam-valence.fr/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "chezsam-valence.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "chezsam-valence.vercel.app"
+        }
+      ],
       "destination": "https://chezsam-valence.fr/:path*",
       "permanent": true
     },
@@ -29,6 +49,17 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=86400"
+        }
+      ]
     }
   ]
 }
